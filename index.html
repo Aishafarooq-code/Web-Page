@@ -5,424 +5,314 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tech Learn | Computer Learning Center</title>
 <style>
-:root {
-    --navy: #0F172A;
-    --blue: #2563EB;
-    --light-blue: #60A5FA;
-    --background: #F5F7FA;
-    --panel: #E2E8F0;
-    --text: #333;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    background-color: var(--background);
+    background-color: #F5F7FA;
     font-family: Arial, sans-serif;
-    color: var(--text);
-    margin: 0;
-    overflow-x: hidden;
+    color: #333;
 }
-
 nav {
-    background-color: var(--navy);
+    background-color: #0F172A;
     color: white;
-    padding: 15px clamp(16px, 5vw, 60px);
+    padding: 15px;
+    margin: 0px;
 }
-
-#header {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-}
-
 nav h1 {
-    margin: 0;
-    font-size: clamp(1.4rem, 3vw, 2rem);
-    white-space: nowrap;
+    display: inline;
+    margin-right: 80px;
 }
-
 nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 12px 25px;
-    list-style: none;
-    margin: 0;
+    display: inline;
     padding: 0;
 }
-
 nav li {
-    margin: 0;
+    display: inline;
+    margin-right: 25px;
 }
-
 nav a {
     color: white;
     text-decoration: none;
 }
-
 nav a:hover {
-    color: var(--light-blue);
+    color: #60A5FA;
 }
-
-h2,
-h3,
-p,
-.home,
-.courses,
-table,
-form,
-.links ul,
-#contact > img {
-    width: min(100% - 32px, 1100px);
-    margin-left: auto;
-    margin-right: auto;
-}
-
 h2 {
     color: #112144;
-    font-size: clamp(1.7rem, 4vw, 2.2rem);
+    font-size: 28px;
     margin-top: 35px;
-    margin-bottom: 16px;
+    margin-left:30px;
 }
-
 h3 {
     color: #112144;
-    font-size: clamp(1.3rem, 3vw, 1.7rem);
+    font-size: 22px;
     margin-top: 30px;
+    margin-left:30px;
 }
-
 p {
-    font-size: 1rem;
+    font-size: 16px;
     line-height: 1.6;
+    margin-left:30px;
 }
-
 .home {
     background-color: white;
-    padding: clamp(20px, 5vw, 40px);
-    margin-top: 24px;
+    padding: 30px;
+    margin-left:30px;
 }
-
 .home h2 {
-    width: 100%;
-    margin-top: 0;
-    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-size: 35px;
+    margin-left:30px;
 }
-
 .button {
-    display: inline-block;
-    background-color: var(--blue);
+    background-color: #2563EB;
     color: white;
     padding: 10px 18px;
     text-decoration: none;
-    border-radius: 4px;
+    margin-left:30px;
 }
-
-.button:hover,
-input[type="submit"]:hover,
-button:hover {
+.button:hover {
     background-color: #1D4ED8;
 }
-
 .courses {
-    background-color: var(--panel);
-    padding: 20px clamp(20px, 5vw, 40px);
-    margin-top: 20px;
+    background-color: #E2E8F0;
+    padding: 20px;
+    margin: 20px 0;
+    margin-left:30px;
 }
-
 .courses li {
-    margin: 8px 0;
+    margin: 8px;
+    margin-left:30px;
 }
-
 img {
-    display: block;
-    width: min(100% - 32px, 800px);
-    height: auto;
-    max-height: 400px;
-    object-fit: cover;
-    margin: 24px auto;
-    border-radius: 4px;
+    width: 500px;
+    height: 250px;
+    margin-left:30px;
 }
-
-.home img {
-    width: 100%;
-    max-width: 800px;
-    margin: 24px auto 0;
-}
-
 table {
+    width: 90%;
     border-collapse: collapse;
     background-color: white;
+    margin-left:30px;
 }
-
-th,
-td {
-    padding: 12px;
-    border: 1px solid #999;
-    text-align: left;
-}
-
 th {
-    background-color: var(--navy);
+    background-color: #0F172A;
     color: white;
+    padding: 12px;
 }
-
+td {
+    padding: 10px;
+    border: 1px solid #999;
+}
 .even {
-    background-color: var(--panel);
+    background-color: #E2E8F0;
 }
-
 .odd {
     background-color: white;
 }
 
 form {
     background-color: white;
-    padding: clamp(20px, 5vw, 30px);
-    border-radius: 4px;
+    padding: 20px;
+    margin-left:30px;
+    width: 600px;
 }
-
-input[type="text"],
-input[type="email"],
+input[type="text"], input[type="email"] {
+    padding: 8px;
+    width: 90%;
+}
 textarea {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    padding: 10px;
-    font: inherit;
+    width: 90%;
+    height: 100px;
+    padding: 8px;
 }
-
-textarea {
-    min-height: 120px;
-    resize: vertical;
-}
-
 input[type="radio"] {
     margin: 8px;
 }
-
-input[type="submit"],
-button {
-    background-color: var(--blue);
+input[type="submit"], button {
+    background-color: #2563EB;
     color: white;
     border: none;
     padding: 10px 20px;
-    font: inherit;
-    cursor: pointer;
-    border-radius: 4px;
 }
-
+input[type="submit"]:hover, button:hover {
+    background-color: #1D4ED8;
+}
 .links a {
-    color: var(--blue);
+    color: #2563EB;
     text-decoration: none;
+    margin-left:30px;
 }
-
 .links a:hover {
     text-decoration: underline;
+    margin-left:30px;
 }
-
 footer {
-    background-color: var(--navy);
+    background-color: #0F172A;
     color: white;
     text-align: center;
     padding: 20px;
     margin-top: 30px;
 }
-
-footer p {
-    width: 100%;
-    margin: 0;
-}
-
-@media (max-width: 700px) {
-    nav {
-        padding: 16px;
-    }
-
-    #header {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 14px;
-    }
-
-    nav ul {
-        justify-content: flex-start;
-        gap: 10px 18px;
-    }
-
-    h2,
-    h3,
-    p,
-    .home,
-    .courses,
-    table,
-    form,
-    .links ul,
-    #contact > img {
-        width: calc(100% - 32px);
-    }
-
-    .home {
-        padding: 20px 16px;
-    }
-
-    .home h2 {
-        width: 100%;
-    }
-
-    table {
-        display: block;
-        overflow-x: auto;
-        white-space: nowrap;
-    }
-
-    th,
-    td {
-        padding: 10px;
-    }
-}
-
-@media (max-width: 420px) {
-    nav ul {
-        flex-direction: column;
-        gap: 8px;
-    }
-
-    .button,
-    input[type="submit"],
-    button {
-        width: 100%;
-        text-align: center;
-    }
-}
 </style>
+
 </head>
 <body>
 <nav>
     <div id="header">
-        <h1>Tech Learn</h1>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#courses">Courses</a></li>
-            <li><a href="#registration">Registration</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
+<h1>Tech Learn</h1>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#courses">Courses</a></li>
+<li><a href="#registration">Registration</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
 </nav>
-
-<div class="home" id="home">
-    <h2>Learn Today. Build Tomorrow.</h2>
-    <p>Learn practical computer skills with our beginner-friendly courses in web development, programming and technology.</p>
-    <a href="#courses" class="button">Explore Courses</a>
-    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Computer coding workspace">
 </div>
-
+<div class="home">
+<h2>Learn Today. Build Tomorrow.</h2>
+<p>Learn practical computer skills with our beginner-friendly courses in web development, programming and technology.</p>
+<a href="#courses" class="button">Explore Courses</a>
+<br><br>
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" alt="Computer coding workspace">
+</div>
 <div id="about">
-    <h2>About Us</h2>
-    <p>We offer a wide range of courses in web development, programming and technology. Our goal is to provide high-quality education and resources to help students improve their skills and knowledge.</p>
-    <p>Our courses are designed to be practical, hands-on and easy to understand. Whether you are a beginner or already have some experience, you can find a course according to your future goals.</p>
-    <p>We provide students with computers, internet access and practical learning facilities. Our instructors guide students through their coursework and projects.</p>
+<h2>About Us</h2>
+<p>We offer a wide range of courses in web development, programming and technology. Our goal is to provide high-quality education and resources to help students improve their skills and knowledge.</p>
+<p>Our courses are designed to be practical, hands-on and easy to understand. Whether you are a beginner or already have some experience, you can find a course according to your future goals.</p>
+<p>We provide students with computers, internet access and practical learning facilities. Our instructors guide students through their coursework and projects.</p>
 </div>
-
 <div id="courses">
-    <h2>Our Courses</h2>
-    <p>We offer different courses tailored to meet the needs of various learners. You can choose a course according to your future goals.</p>
-    <div class="courses">
-        <ul>
-            <li>Web Development</li>
-            <li>Graphic Designing</li>
-            <li>E-commerce</li>
-            <li>Digital Marketing</li>
-            <li>Mobile App Development</li>
-            <li>Artificial Intelligence</li>
-            <li>Data Science</li>
-            <li>Cyber Security</li>
-        </ul>
-    </div>
-    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Computer technology">
+<h2>Our Courses</h2>
+<p>We offer different courses tailored to meet the needs of various learners. You can choose a course according to your future goals.</p>
+<div class="courses">
+<ul>
+<li>Web Development</li>
+<li>Graphic Designing</li>
+<li>E-commerce</li>
+<li>Digital Marketing</li>
+<li>Mobile App Development</li>
+<li>Artificial Intelligence</li>
+<li>Data Science</li>
+<li>Cyber Security</li>
+</ul>
 </div>
-
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80" alt="Computer technology">
+</div>
 <h3>Courses Time Period and Fee Structure</h3>
 <table>
-    <tr><th>Course Name</th><th>Time Period</th><th>Fee Structure</th></tr>
-    <tr class="odd"><td>Web Development</td><td>6 Months</td><td>5000 Rs</td></tr>
-    <tr class="even"><td>Graphic Designing</td><td>4 Months</td><td>4000 Rs</td></tr>
-    <tr class="odd"><td>E-commerce</td><td>3 Months</td><td>3000 Rs</td></tr>
-    <tr class="even"><td>Digital Marketing</td><td>5 Months</td><td>4500 Rs</td></tr>
-    <tr class="odd"><td>Mobile App Development</td><td>6 Months</td><td>6000 Rs</td></tr>
-    <tr class="even"><td>Artificial Intelligence</td><td>8 Months</td><td>8000 Rs</td></tr>
-    <tr class="odd"><td>Data Science</td><td>7 Months</td><td>7000 Rs</td></tr>
-    <tr class="even"><td>Cyber Security</td><td>5 Months</td><td>5000 Rs</td></tr>
+<tr>
+<th>Course Name</th>
+<th>Time Period</th>
+<th>Fee Structure</th>
+</tr>
+<tr class="odd">
+<td>Web Development</td>
+<td>6 Months</td>
+<td>5000 Rs</td>
+</tr>
+<tr class="even">
+<td>Graphic Designing</td>
+<td>4 Months</td>
+<td>4000 Rs</td>
+</tr>
+<tr class="odd">
+<td>E-commerce</td>
+<td>3 Months</td>
+<td>3000 Rs</td>
+</tr>
+<tr class="even">
+<td>Digital Marketing</td>
+<td>5 Months</td>
+<td>4500 Rs</td>
+</tr>
+<tr class="odd">
+<td>Mobile App Development</td>
+<td>6 Months</td>
+<td>6000 Rs</td>
+</tr>
+<tr class="even">
+<td>Artificial Intelligence</td>
+<td>8 Months</td>
+<td>8000 Rs</td>
+</tr>
+<tr class="odd">
+<td>Data Science</td>
+<td>7 Months</td>
+<td>7000 Rs</td>
+</tr>
+<tr class="even">
+<td>Cyber Security</td>
+<td>5 Months</td>
+<td>5000 Rs</td>
+</tr>
 </table>
-
+</table>
 <div id="registration">
-    <h2>Registration Form</h2>
-    <p>For your better future, register now!</p>
-    <form>
-        <label for="student-name">Name:</label><br>
-        <input type="text" id="student-name" name="student-name" placeholder="Enter your name"><br><br>
-        <label for="student-email">Email:</label><br>
-        <input type="email" id="student-email" name="student-email" placeholder="Enter your email"><br><br>
-        <label>Select Course:</label><br><br>
-        <input type="radio" id="web" name="course" value="web-development"><label for="web">Web Development</label><br>
-        <input type="radio" id="graphic" name="course" value="graphic-designing"><label for="graphic">Graphic Designing</label><br>
-        <input type="radio" id="ecommerce" name="course" value="e-commerce"><label for="ecommerce">E-commerce</label><br>
-        <input type="radio" id="marketing" name="course" value="digital-marketing"><label for="marketing">Digital Marketing</label><br>
-        <input type="radio" id="mobile" name="course" value="mobile-app-development"><label for="mobile">Mobile App Development</label><br>
-        <input type="radio" id="ai" name="course" value="artificial-intelligence"><label for="ai">Artificial Intelligence</label><br>
-        <input type="radio" id="data" name="course" value="data-science"><label for="data">Data Science</label><br>
-        <input type="radio" id="cyber" name="course" value="cyber-security"><label for="cyber">Cyber Security</label><br><br>
-        <label>Method of Payment:</label><br><br>
-        <input type="radio" id="cash" name="payment" value="cash"><label for="cash">Cash</label><br>
-        <input type="radio" id="card" name="payment" value="card"><label for="card">Credit/Debit Card</label><br>
-        <input type="radio" id="online" name="payment" value="online"><label for="online">Online Transfer</label><br><br>
-        <input type="submit" value="Register Now">
-    </form>
+<h2>Registration Form</h2>
+<p>For your better future, register now!</p>
+<form>
+<label for="student-name">Name:</label><br>
+<input type="text" id="student-name" name="student-name" placeholder="Enter your name"><br><br>
+<label for="student-email">Email:</label><br>
+<input type="email" id="student-email" name="student-email" placeholder="Enter your email"><br><br>
+<label>Select Course:</label><br><br>
+<input type="radio" id="web" name="course" value="web-development">
+<label for="web">Web Development</label><br>
+<input type="radio" id="graphic" name="course" value="graphic-designing">
+<label for="graphic">Graphic Designing</label><br>
+<input type="radio" id="ecommerce" name="course" value="e-commerce">
+<label for="ecommerce">E-commerce</label><br>
+<input type="radio" id="marketing" name="course" value="digital-marketing">
+<label for="marketing">Digital Marketing</label><br>
+<input type="radio" id="mobile" name="course" value="mobile-app-development">
+<label for="mobile">Mobile App Development</label><br>
+<input type="radio" id="ai" name="course" value="artificial-intelligence">
+<label for="ai">Artificial Intelligence</label><br>
+<input type="radio" id="data" name="course" value="data-science">
+<label for="data">Data Science</label><br>
+<input type="radio" id="cyber" name="course" value="cyber-security">
+<label for="cyber">Cyber Security</label><br><br>
+<label>Method of Payment:</label><br><br>
+<input type="radio" id="cash" name="payment" value="cash">
+<label for="cash">Cash</label><br>
+<input type="radio" id="card" name="payment" value="card">
+<label for="card">Credit/Debit Card</label><br>
+<input type="radio" id="online" name="payment" value="online">
+<label for="online">Online Transfer</label><br><br>
+<input type="submit" value="Register Now">
+</form>
 </div>
-
 <div class="links">
-    <h2>Useful Learning Resources</h2>
-    <p>You can visit these websites to improve your computer and programming skills.</p>
-    <ul>
-        <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
-        <li><a href="https://developer.mozilla.org/" target="_blank" rel="noopener">MDN Web Docs</a></li>
-        <li><a href="https://www.freecodecamp.org/" target="_blank" rel="noopener">freeCodeCamp</a></li>
-    </ul>
+<h2>Useful Learning Resources</h2>
+<p>You can visit these websites to improve your computer and programming skills.</p>
+<ul>
+<li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+<li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+<li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+</ul>
 </div>
-
 <div id="contact">
-    <h2>Contact Us</h2>
-    <p>If you have any questions, feel free to contact us!</p>
-    <p>123 Main Street</p>
-    <p>Karachi, Pakistan</p>
-    <p>Phone: +92 300 1234567</p>
-    <p>Email: info@techlearn.com</p>
-    <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&q=80" alt="Team working together">
-    <p>You can also message us through the form given below. We will get back to you as soon as possible.</p>
-    <form>
-        <label for="contact-name">Name:</label><br>
-        <input type="text" id="contact-name" name="contact-name" placeholder="Enter your name"><br><br>
-        <label for="contact-email">Email:</label><br>
-        <input type="email" id="contact-email" name="contact-email" placeholder="Enter your email"><br><br>
-        <label for="subject">Subject:</label><br>
-        <input type="text" id="subject" name="subject" placeholder="Enter your subject"><br><br>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" placeholder="Write your message here"></textarea><br><br>
-        <button type="submit">Send Message</button>
-    </form>
+<h2>Contact Us</h2>
+<p>If you have any questions, feel free to contact us!</p>
+<p>123 Main Street</p>
+<p>Karachi, Pakistan</p>
+<p>Phone: +92 300 1234567</p>
+<p>Email: info@techlearn.com</p>
+<img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&q=80" alt="Team working together">
+<p>You can also message us through the form given below. We will get back to you as soon as possible.</p>
+<form>
+<label for="contact-name">Name:</label><br>
+<input type="text" id="contact-name" name="contact-name" placeholder="Enter your name"><br><br>
+<label for="contact-email">Email:</label><br>
+<input type="email" id="contact-email" name="contact-email" placeholder="Enter your email"><br><br>
+<label for="subject">Subject:</label><br>
+<input type="text" id="subject" name="subject" placeholder="Enter your subject"><br><br>
+<label for="message">Message:</label><br>
+<textarea id="message" name="message" placeholder="Write your message here"></textarea><br><br>
+<button type="submit">Send Message</button>
+</form>
 </div>
-
 <footer>
-    <p>© 2026 Tech Learn — Computer Learning Center</p>
+<p>© 2026 Tech Learn — Computer Learning Center</p>
 </footer>
 </body>
 </html>
